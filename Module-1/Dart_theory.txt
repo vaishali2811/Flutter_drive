@@ -1,0 +1,247 @@
+              
+
+                   								 Dart OOP
+Assignment Level Basic:
+
+
+B1.  What is inheritance? 
+A1. The capability of a class to derive properties and characteristics from another class is called Inheritance.Inheritance is 
+      one of the most important features of Object-Oriented Programming. Inheritance is the most powerful concept of any higher
+      programing language. inheritance provides reusability.using int=heritance we can reduce our code.
+
+B2. Which inheritance is not supported by Dart? Why?
+A2. multiple inheritance does not support dart beacuse there are two parents and one child in multiple inheritnce 
+      so in technically there are posibilities of abmiguties(confusion).
+
+B3. What is advantage of inheritance?
+A3.It allows the code to be  reused as many times as needed.
+     Saves time and efforts as the main code need not be written again.
+
+B4. Difference between inheritance and encapsulation.
+A4.Inheritance dictates that a child class (subclass) inherits all the attributes and methods from 
+a parent class (superclass). 
+Encapsulation dictates that one class must not have access to the (private) data of another class. 
+The way these rules are written, it seems that they are mutually exclusive.
+                                             
+B5. Difference between inheritance and abstraction. 
+A5.The main difference between abstraction and inheritance is that abstraction allows 
+      hiding the internal details and displaying only the functionality to the users, while inheritance
+      allows using properties and methods of an already existing class. Object-Oriented Programming 
+      (OOP) is a major programming paradigm.
+     
+B6. Difference between inheritance and polymorphism. 
+A6.Inheritance is one in which a new class is created that inherits the properties of the already existing class.
+      It supports the concept of code reusability and reduces the length of the code in object-oriented programming.
+      Polymorphism is that in which we can perform a task in multiple forms or ways. It is applied to functions or methods.
+        
+B7. Can we override static method in Dart?
+A7. It is not  possible override static method in dart.
+
+B8. Can we overload static method in Dart?
+A8. Yes, Static method can be overloaded.
+
+B9. Can a class implement more than one interface?
+A9. Yes, any number of classes can implement an interface.
+
+B10. Can a class extend more than one class in Dart? 
+A10. Yes, class extend more than one class.
+
+B11. Can an interface extend more than one interface in Dart?
+A11. We cannot extend more than one class in Dart. If you try to extend more than one class then Dart 
+        will throw the error “ Each class definition can have at most one extended clause”. This is one of the core 
+        concepts of Object Oriented Programming in any programming language and Dart is also the same here. 
+        Implements:
+
+B12. What will happen if a class implements two interfaces and they both have a method with same 
+        name and signature? 
+A12. No,its an error , if two interfaces contain a method with same signature but different return types, 
+        than it is impossible to implement both interface simultaneously.
+
+B13. Can we pass an object of a subclass to a method expecting an object of the super class? 
+B13. Yes, you can pass that beacuse superclass and subclass are related to each other by Inheritance 
+        which provides is-A property.
+
+B14. Are static members inherited to sub classes? 
+B14. No. Static members are not inherited. Super and subclasses, on the other hand, can both have 
+        a static method with the same signature. At the subclass, the static member of the super class will be hidden.
+
+
+B15. What happens if the parent and the child class have a field with same identifier?
+A15.Yes, it is possible to have the same data member in Parent and Child classes. Now, we will see the 
+        capability or strength of the Parent and Child class. The Parent class reference can hold its own object 
+        and Child class object as well and The Child class reference holds its own object only.
+
+
+B16. Are constructors and initializers also inherited to sub classes?
+A16.No, Constructors and initializers (Static initializers and instance initializers) are not inherited to subclasses.
+       But, they are executed while instantiating a subclass.
+
+B17. How do you restrict a member of a class from inheriting by its sub classes? 
+A17.We can restrict a member of a class from inheriting to its subclasses by declaring 
+       the member as a private. Because, private members are not inherited to subclasses.
+
+B18. How do you implement multiple inheritance in Dart? 
+A18. No, Dart does not support multiple inheritance.
+
+B19. Can a class extend by itself in Dart? 
+A19. Unlike implementing multiple interfaces dart only supports single inheritance so you cannot extend from 
+        multiple classes.
+
+B20. How do you override a private method in Dart?
+A20.You can't override a private method, but you can introduce one in a derived class without a problem. 
+This compiles fine: 
+       class Base {
+           private void foo () { 
+        } }
+       class Child extends Base { private void foo () {
+        } }
+
+B21. When to overload a method in Dart and when to override it?
+A21.Method overriding occurs in dart when a child class tries to override the parent class’s method. 
+       When a child class extends a parent class, it gets full access to the methods of the parent class and thus
+        it overrides the methods of the parent class. It is achieved by re-defining the same method present in the
+        parent class.
+
+B22. What is the order of extends and implements keyword on Dart class declaration? 
+A22.Extends -In Dart, an extended keyword is often used to change class behavior using Inheritance.
+       The ability of a class to acquire properties and features in another category is called Inheritance. 
+       It is theability of a program to create a new class from an existing class. In simple terms, we can say that 
+       we use extends to form a subclass, and super refers to the superclass. A class whose properties the child 
+       class inherits is called a Parent Class. The parent class is also known as the base class or super class.
+
+       implements-An interface in Dart refers to the syntax or blueprint that any class must adhere to. 
+       It basically defines the array of methods available on the object. It provides the user with the blueprint 
+       of the class that any class should follow if it interfaces with that class. If a class inherits another class,
+       it should override ( re-define ) the functions present inside that interfaced class in its own way as per the 
+       subject. In Dart, there isn't a specific or direct way of creating the interfaces. To implement them, we use
+       the ' implement ' keyword. By default, every class is an interface in itself containing all the interface memb-
+       ers and the members of any other interfaces that it implements.
+
+B23. How do you prevent overriding a Dart method without using the final modifier?
+A23.Method overriding occurs in dart when a child class tries to override the parent class’s method. 
+       When a child class extends a parent class, it gets full access to the methods of the parent class 
+       and thus it overrides the methods of the parent class. It is achieved by re-defining the same method 
+       present in the parent class.This method is helpful when you have to perform different functions for a 
+      different child class, so we can simply re-define the content by overriding it.
+
+B24. What are the rules of method overriding in Dart?
+A24.The overriding method (the child class method) must be declared with the same configuration 
+       as the overridden method (the superclass method). The return type, list of arguments and its sequence 
+       must be the same as the parent class method. The overriding method must be defined in the subclass, 
+       not in the same class.
+
+B25. Difference between method overriding and overloading in Dart. 
+A25.Method overloading allows multiple methods in the same class to have the same name but different 
+       parameters. 
+       Method overriding allows a parent class and a child class to have methods with the same name and same 
+       parameters. The child class method will override the parent class method.
+
+
+B26. What happens when a class implements two interfaces and both declare field (variable) with 
+same name?
+A26.If a type implements two interfaces, and each interface defines a method that has identical signature, 
+       then in effectthere is only one method, and they are not distinguishable. If, say, the two methods have 
+       conflicting return types, then it willbe a compilation error.
+
+B27. Can a subclass instance method override a superclass static method?
+A27.No, we cannot override static methods in Java. We can declare static methods with the same signature in 
+       subclass but it is not considered overriding as there would not be any run-time polymorphism. Overriding is a 
+       feature of OOP languages likeJava that is related to run-time polymorphism.
+
+B28. Can a subclass static method hide superclass instance method? 
+A28.Static Methods If a subclass defines a static method with the same signature as a static method in the superclass,
+       then the method in the subclass hides the one in the superclass. The distinction between hiding a static method and 
+       overriding an instance method has important implications:
+
+B29. Can a superclass access subclass member?
+A29.No, a superclass has no knowledge of its subclasses. Yes, a subclass has access to all non private members 
+       of its superclass.
+
+
+B30. Difference between object oriented and object based language.
+B30.Object-oriented languages follow all the concepts of OOPs whereas the object-based language doesn’t follow all the 
+       concepts of OOPs like inheritance and polymorphism. Object-oriented languages do not have the inbuilt objects whereas 
+       Object-based languages have the inbuilt objects, for example, JavaScript has window objects.
+
+
+B31. Explain Diamond problem.
+B31.The Diamond Problem is an ambiguity that arises in multiple inheritance when two parent classes inherit from the same 
+       grandparent class, and both parent classes are inherited by a single child class. Without using virtual inheritance, the child class
+       would inherit the properties of the grandparent class twice, leading to ambiguity.
+
+
+B32. Why Dart does not support operator overloading?
+B32. Dart did note support overloading originally beacuse it was a much more dynamic language where the declared types 
+       did not have any semantic effect.
+
+B33. What is Encapsulation in Dart? 
+A33. Wrap data which contain data member and menber function in a single entity.
+
+B34. Which of the Dart OOPS feature promotes access protection or data hiding?
+B34. Encapsulation.
+
+B35. Create a class named 'PrintNumber' to print various numbers of different datatypes by creating 
+        different methods with the same name 'printn' having a parameter for each data type. 
+
+
+B36. Create a class to print an integer and a character with two methods having the same name but 
+different sequence of the integer and the character parameters. For example, if the parameters of the 
+first method are of the form (int n, char c), then that of the second method will be of the form (char c, 
+int n). 
+
+B37. Create a class to print the area of a square and a rectangle. The class has two methods with the 
+same name but different number of parameters. The method for printing area of a rectangle has two 
+parameters which are length and breadth respectively while the other method for printing area of
+square has one parameter which is side of square.
+
+
+B38. Create a class with a method that prints "This is a parent class" and its subclass with another 
+method that prints "This is child class". Now, create an object for each of the class and call 1 - method 
+of parent class by object of parent class 2 - method of child class by object of child class 3 - method of 
+parent class by object of child class 
+
+
+B39. Create a class named 'Member' having the following members: Data members 1 - Name 2 - Age 3 
+- Phone number 4 - Address 5 - Salary It also has a method named 'printSalary' which prints the salary 
+of the members. Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' 
+and 'Manager' classes have data members 'specialization' and 'department' respectively. Now, assign 
+name, age, phone number, address and salary to an employee and a manager by making an object of 
+both of these classes and print the same.
+
+ 
+B40. Create a class named 'Rectangle' with two data members 'length' and 'breadth' and two methods 
+to print the area and perimeter of the rectangle respectively. Its constructor having parameters for 
+length and breadth is used to initialize the length and breadth of the rectangle. Let class 'Square' 
+inherit the 'Rectangle' class with its constructor having a parameter for its side (suppose s) calling the 
+constructor of its parent class as 'super (s, s)'. Print the area and perimeter of a rectangle and a 
+square. 
+
+
+
+B41. Write a program to print the area and perimeter of a triangle having sides of 3, 4 and 5 units by 
+creating a class named 'Triangle' without any parameter in its constructor.
+
+
+B42. Print the sum, difference and product of two complex numbers by creating a class named 
+'Complex' with separate methods for each operation whose real and imaginary parts are entered by 
+user. 
+
+
+B43. Create an abstract class 'Parent' with a method 'message'. It has two subclasses each having a 
+method with the same name 'message' that prints "This is first subclass" and "This is second subclass" 
+respectively. Call the methods 'message' by creating an object for each subclass. 
+
+
+
+B44. Create an abstract class 'Bank' with an abstract method 'getBalance'. $100, $150 and $200 are 
+deposited in banks A, B and C respectively. 'BankA', 'BankB' and 'BankC' are subclasses of class 'Bank', 
+each having a method named 'getBalance'. Call this method by creating an object of each of the three 
+classes. 
+
+
+B45. We have to calculate the percentage of marks obtained in three subjects (each out of 100) by 
+student A and in four subjects (each out of 100) by student B. Create an abstract class 'Marks' with an 
+abstract method 'getPercentage'. It is inherited by two other classes 'A' and 'B' each having a method 
+with the same name which returns the percentage of the students. The constructor of student A takes 
+the marks in three subjects as its parameters and the marks in four subjects as its parameters for 
+student B. Create an object for eac of the two classes and print the percentage of marks for both the
