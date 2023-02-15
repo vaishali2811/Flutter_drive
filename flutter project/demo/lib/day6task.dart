@@ -8,10 +8,12 @@ class mydemo extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: [
-          Text(
-            "Hello flutter",
-            style: TextStyle(
-                fontSize: 30, color: Colors.red, fontWeight: FontWeight.w900),
+          Expanded(
+            child: Text(
+              "Hello flutter",
+              style: TextStyle(
+                  fontSize: 30, color: Colors.red, fontWeight: FontWeight.w900),
+            ),
           ),
           Text(
             "Hello flutter",

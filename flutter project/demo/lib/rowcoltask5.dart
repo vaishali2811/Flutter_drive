@@ -16,7 +16,7 @@ class _rowcoltask5State extends State<rowcoltask5> {
             width: 740,
             decoration:
                 BoxDecoration(border: Border.all(width: 2, color: Colors.red)),
-            child: Row(
+            child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
